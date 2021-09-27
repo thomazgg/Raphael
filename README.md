@@ -1,7 +1,6 @@
 # Raphael
-Discord bot "Rei da Sabedoria Raphael" com 100+ comandos 
++ Discord bot "Rei da Sabedoria Raphael" com 100+ comandos
 
-# Advanced Discord Music Bot
 ## Instalação | Como usar o bot
 
  **1.** Instale [node.js v12 +](https://nodejs.org/en/download/) ou superior
