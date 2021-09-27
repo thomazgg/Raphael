@@ -3,7 +3,7 @@
 
 ## Instalação | Como usar o bot
 
- **1.** Instale [node.js v12 +](https://nodejs.org/en/download/) ou superior
+ **1.** Instale [node.js v12 +](https://nodejs.org/en/download/) ou superior e baixe Java 15 (Java 13 recomendado)
 
  **2.** Baixe este repositório e descompacte-o | ou git cloná-lo
 
@@ -11,13 +11,7 @@
 
  **4** Preencha os parâmetros, BEM em `botconfig / config.json`!
 
- **5.** [Baixe Lavalink](https://cdn.discordapp.com/attachments/798196676405755905/827174915714711572/Lavalink.jar) e baixe Java 15 (Java 13 recomendado)
-
-**5.1** Execute o arquivo Lavalink com: **`java -jar Lavalink.jar`**
-
- **CERTIFIQUE-SE DE QUE EXISTE O ARQUIVO `application.yml`, CASO CONTRÁRIO NÃO FUNCIONARÁ!**
-
- **6.** inicie o bot com **`node index.js`**
+ **5.** inicie o bot com **`node index.js`**
 
 ### *Modificar - `config.json`*
 
@@ -34,29 +28,26 @@
 
 # É ASSIM QUE DEVE SER PARECIDO!
 
-![](https://github.com/Tomato6966/discord-js-lavalink-Music-Bot-erela-js/blob/main/Folder_structure.png)
+![](https://media.discordapp.net/attachments/766655902509563944/892190708746825728/unknown.png)
 
-## Windows start Command .bat file
-```bat
-@ECHO OFF
-ECHO ==========================
-ECHO Starting Lavalink
-ECHO ==========================
-start cmd /k java -jar ./Lavalink.jar
-ECHO ==========================
-@ECHO Taking a 5 Second Break for Lavalink
-ECHO ==========================
-timeout /T 5 /nobreak
-ECHO ==========================
-@ECHO Starting BOT
-ECHO ==========================
-start cmd /k node .
-exit /s'
+# COMO INSTALAR NODE v.16
+
+1. Execute este script no shell para instalar o node e configurar o npm.
 ```
-Arquivo `start.bat` do Windows
-Que inicia Lavalink e o Bot juntos com um clique;)
+npm i --save-dev node@16 && npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH
+```
 
-Coloque-o na mesma pasta que `index.js` e` Lavalink.jar`
+2. Crie o .replit para executar o node a partir do shell em vez do console.
+```
+run="npm start"
+```
+
+3. Certifique-se de adicionar o script de início em seu arquivo package.json
+```
+"scripts": {
+    "start": "node ."
+  }
+```
 
 ## Entre no meu servidor do discord
 
